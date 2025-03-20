@@ -58,7 +58,7 @@ app.post("/signup", upload.single("image"), async (req, res) => {
             gender,
             image,
             givenExams: [],
-            notGivenExams: ["Math Test", "Physics Quiz", "Chemistry Midterm", "English Final"], // ✅ Ensure default exams are added
+            notGivenExams: ["Python", "Microprocessor", "Database Management System", "Operating System"], // ✅ Ensure default exams are added
         });
 
         await newStudent.save();

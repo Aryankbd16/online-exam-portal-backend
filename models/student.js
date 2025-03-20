@@ -9,7 +9,7 @@ const studentSchema = new mongoose.Schema({
     gender: { type: String, required: true },
     image: { type: String }, // Store image as Base64 string
     givenExams: { type: [String], default: [] }, // Stores completed exams
-    notGivenExams: { type: [String], default: ["Math Test", "Physics Quiz", "Chemistry Midterm", "English Final"] } // Default subjects
+    notGivenExams: { type: [String], default: ["Python", "Microprocessor", "Database Management System", "Operating System"] } // Default subjects
 });
 
 module.exports = mongoose.model("Student", studentSchema);
