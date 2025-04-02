@@ -6,6 +6,9 @@ const studentSchema = new mongoose.Schema({
     username: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     department: { type: String, required: true },
+    email: { type: String, required: true},
+    otp: { type: String, required: false }, // Change from 'required: true' to 'required: false'
+    otpExpiry: { type: Date, required: false }, // Also make otpExpiry optional
     gender: { type: String, required: true },
     image: { type: String }, // Store image as Base64 string
     givenExams: { type: [String], default: [] }, // Stores completed exams
